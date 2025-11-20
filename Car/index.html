@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Moving Animation</title>
+    <style>
+        * {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        img {
+            position: absolute;
+            bottom: 10px;
+            width: 400px;
+            height: 200px;
+            animation-name: car;
+            animation-duration: 10s;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        div {
+            background: linear-gradient(rgba(0, 0, 0, 0.3)), url(https://media.istockphoto.com/id/613519206/photo/empty-asphalt-road.jpg?s=612x612&w=0&k=20&c=BRwh5AemjBgU1JOVyE13AN1phy191Po_yu-aVK3hPgg=) center no-repeat;
+            background-size: cover;
+            height: 100vh;
+
+
+        }
+
+        @keyframes car {
+            0% {
+                transform: translateX(-380px);
+            }
+
+            100% {
+                transform: translateX(1350px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div><span><img src="./car-removebg-preview.png"></span></div>
+</body>
+
+</html>
